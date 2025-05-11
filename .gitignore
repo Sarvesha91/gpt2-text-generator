@@ -1,7 +1,10 @@
 # Ignore .idea and .DS_Store file
 *.idea
 *.DS_Store
+
 /Models/**
 /gpt2/**
 /gpt2-xl/**
-/distilgpt2/**venv/ 
+/distilgpt2/**
+
+venv/

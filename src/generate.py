@@ -10,8 +10,8 @@ torch.set_grad_enabled(False)
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Load tokenizer and model
-tokenizer = AutoTokenizer.from_pretrained("./distilgpt2")
-model = AutoModelWithLMHead.from_pretrained("./distilgpt2")
+tokenizer = AutoTokenizer.from_pretrained("distilgpt2")
+model = AutoModelWithLMHead.from_pretrained("distilgpt2")
 model = model.to(device)
 
 

@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import os
 import json
 import flask
@@ -10,13 +8,14 @@ from flask_cors import CORS, cross_origin
 
 
 app = flask.Flask(__name__)
-CORS(app)
+
+# Updated CORS Configuration
+CORS(app, resources={r"/*": {"origins": "*"}})  # Allows all origins for all routes
 app.config['PROPAGATE_EXCEPTIONS'] = True
 
 # Logs
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s :: %(levelname)s :: %(message)s')
-
 
 # Load Environment Variables
 HOST = os.environ.get('HOST', 'http://localhost')

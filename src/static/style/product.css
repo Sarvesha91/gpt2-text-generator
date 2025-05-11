@@ -8,18 +8,18 @@ html, body {
 }
 
 .site-header {
-    background-color: rgba(0, 0, 0, .85);
+    background-color: rgba(198, 182, 182, 0.85);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
 }
 
 .site-header a {
-    color: #999;
+    color: #a07878;
     transition: ease-in-out color .15s;
 }
 
 .site-header a:hover {
-    color: #fff;
+    color: #7f6363;
     text-decoration: none;
 }
 
@@ -39,14 +39,14 @@ textarea {
     -webkit-transition: border 0.5s;
     -moz-transition: border 0.5s;
     -o-transition: border 0.5s;
-    border: solid 3px #24e95f;
+    border: solid 3px #50d174;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 input:focus, textarea:focus {
-    border: solid 2px #24e95f;
+    border: solid 2px #2ee063;
 }
 
 textarea {

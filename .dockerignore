@@ -1,3 +1,46 @@
-# Exclude files and directories whose names start with download
-*/download*
-*/images*
+# Exclude all files and directories starting with "download" or "images"
+**/download*
+**/images*
+
+# Exclude Python cache files (from all directories)
+**/__pycache__
+**/*.pyc
+**/*.pyo
+
+# Exclude virtual environment directories
+**/venv
+**/.venv
+
+# Exclude node_modules for Node.js projects
+**/node_modules
+
+# Exclude all logs
+**/*.log
+
+# Exclude all .git directories (to avoid copying git history)
+**/.git
+
+# Exclude Dockerfile or any Docker-related files if you don't want them in the image
+Dockerfile
+.dockerignore
+
+# Exclude all README files (if you don't need them in the image)
+README*
+
+# Exclude all image files (if they are not needed in your image)
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.gif
+
+# Exclude environment files (e.g., .env, .env.local)
+**/.env
+**/.env.local
+
+# Exclude build artifacts and directories like dist, build
+**/dist
+**/build
+
+# Exclude system files like .DS_Store (macOS) and thumbs.db (Windows)
+**/.DS_Store
+**/Thumbs.db
